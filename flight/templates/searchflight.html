@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Search Results</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .container {
+      margin-top: 50px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .flight-card {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+    }
+    .flight-card h2 {
+      margin-bottom: 10px;
+    }
+    .flight-card p {
+      margin-bottom: 5px;
+    }
+    .no-flights {
+      text-align: center;
+      font-size: 18px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Flight Search Results</h1>
+    {% if flights %}
+      {% for flight in flights %}
+        <div class="flight-card">
+          <h2>Flight Details</h2>
+          <p><strong>Source:</strong> {{ flight.source }}</p>
+          <p><strong>Destination:</strong> {{ flight.destination }}</p>
+          <p><strong>Departure Date:</strong> {{ flight.departure_date }}</p>
+          <p><strong>Return Date:</strong> {{ flight.return_date }}</p>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="no-flights">No flights found.</p>
+    {% endif %}
+  </div>
+</body>
+</html>

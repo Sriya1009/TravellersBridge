@@ -1,0 +1,5 @@
+UI/UX is very important, easy way of website using
+features of website, travelers and tourist place designs in homepage
+travelers&shops/rooms login, admin login
+place to tourists to books rooms, enquiry about place, restaurants etc
+place to receive bookings, questions and interactions

@@ -1,0 +1,413 @@
+{%extends 'index.html' %}
+{% block body %}
+{% load static%}
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(https://wallpaperaccess.com/full/1287407.jpg);">
+				<div class="desc">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5 col-md-5">
+								<!-- <a href="index.html" id="main-logo">Travel</a> -->
+								<div class="tabulation animate-box">
+
+								  <!-- Nav tabs -->
+								   <ul class="nav nav-tabs" role="tablist">
+								      <li role="presentation" class="active">
+								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">Flights</a>
+								      </li>
+								      <li role="presentation">
+								    	   <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab">Hotels</a>
+								      </li>
+								      <li role="presentation">
+								    	   <a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Packages</a>
+								      </li>
+								   </ul>
+
+								   <!-- Tab panes -->
+									<div class="tab-content">
+									 <div role="tabpanel" class="tab-pane active" id="flights">
+										<div class="row">
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">From:</label>
+													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">To:</label>
+													<input type="text" class="form-control" id="to-place" placeholder="Tokyo, Japan"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-start">Check In:</label>
+													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-end">Check Out:</label>
+													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+											<div class="col-sm-12 mt">
+												<section>
+													<label for="class">Class:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>Economy</option>
+														<option value="economy">Economy</option>
+														<option value="first">First</option>
+														<option value="business">Business</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Adult:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Children:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xs-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Flight">
+											</div>
+										</div>
+									 </div>
+
+									 <div role="tabpanel" class="tab-pane" id="hotels">
+									 	<div class="row">
+											<div class="col-xxs-12 col-xs-12 mt">
+												<div class="input-field">
+													<label for="from">City:</label>
+													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-start">Return:</label>
+													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-end">Check Out:</label>
+													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+											<div class="col-sm-12 mt">
+												<section>
+													<label for="class">Rooms:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="economy">1</option>
+														<option value="first">2</option>
+														<option value="business">3</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Adult:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Children:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xs-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Hotel">
+											</div>
+										</div>
+									 </div>
+
+									 <div role="tabpanel" class="tab-pane" id="packages">
+									 	<div class="row">
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">City:</label>
+													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">Destination:</label>
+													<input type="text" class="form-control" id="to-place" placeholder="Tokyo, Japan"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-start">Departs:</label>
+													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-end">Return:</label>
+													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+											<div class="col-sm-12 mt">
+												<section>
+													<label for="class">Rooms:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="economy">1</option>
+														<option value="first">2</option>
+														<option value="business">3</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Adult:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Children:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xs-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Search Packages">
+											</div>
+										</div>
+									 </div>
+									</div>
+
+								</div>
+							</div>
+							<div class="desc2 animate-box">
+								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
+									<h2>Exclusive Limited Time Offer</h2>
+									<h3>Fly to Hong Kong via Los Angeles, USA</h3>
+									<span class="price">$599</span>
+									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+
+		<div id="fh5co-tours" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Book A Flight</h3>
+						<p>Select your travel dates and destination, choose your preferred flight, and provide passenger and payment information.</p>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12 animate-box">
+						<h2 class="heading-title">Todays Flight Deal</h2>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="row">
+							<div class="col-md-12">
+								<h4>Better Deals, More Abilities</h4>
+								<p>By using price comparison sites, booking in advance, being flexible with travel dates and times, and signing up for airline loyalty programs, travelers can find better deals and have more abilities when booking flights.</p>
+							</div>
+							<div class="col-md-12">
+								<h4>Keep up with the news of your airline</h4>
+								<p>Staying up-to-date with the news of your airline, such as flight schedule changes or policy updates, can help you prepare for your trip and avoid any potential issues or surprises.</p>
+							</div>
+							<div class="col-md-12">
+								<h4>In-Flight Experience</h4>
+								<p>The in-flight experience can vary based on airline, route, and class of service, but typically includes amenities such as food and beverage service, in-flight entertainment, and seat comfort.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<img class="img-responsive" src="https://i.pinimg.com/originals/ec/05/db/ec05dbb5deb17a06d30ee83f7b98d3f5.jpg" alt="travel">
+						<a href="#" class="flight-book">
+							<div class="plane-name">
+								<span class="p-flight">United States Airways</span>
+							</div>
+							<div class="desc">
+								<div class="left">
+									<h4>HK-MNL</h4>
+									<span>Dec 20 - Dec29</span>
+								</div>
+								<div class="right">
+									<span class="price">
+										<i class="icon-arrow-down22"></i>
+										$1000
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="flight-book">
+							<div class="plane-name">
+								<span class="p-flight">Qatar Airways</span>
+							</div>
+							<div class="desc">
+								<div class="left">
+									<h4>HK-MNL</h4>
+									<span>Dec 20 - Dec29</span>
+								</div>
+								<div class="right">
+									<span class="price">
+										<i class="icon-arrow-down22"></i>
+										$790
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="flight-book">
+							<div class="plane-name">
+								<span class="p-flight">Philippine Airline</span>
+							</div>
+							<div class="desc">
+								<div class="left">
+									<h4>MNL-HK</h4>
+									<span>Dec 20 - Dec29</span>
+								</div>
+								<div class="right">
+									<span class="price">
+										<i class="icon-arrow-down22"></i>
+										$500
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="flight-book">
+							<div class="plane-name">
+								<span class="p-flight">China Airways</span>
+							</div>
+							<div class="desc">
+								<div class="left">
+									<h4>HK-LAS</h4>
+									<span>Dec 20 - Dec29</span>
+								</div>
+								<div class="right">
+									<span class="price">
+										<i class="icon-arrow-down22"></i>
+										$900
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="https://www.freewalldownload.com/download/beautiful-statue-of-liberty-new-york-city-hd-wallpapers-download/" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>New York</h3>
+								<span>3 nights</span>
+								<span class="price">$1,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="https://c4.wallpaperflare.com/wallpaper/577/373/91/kayangan-lake-coron-islands-palawan-philippines-wallpaper-preview.jpg" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Philippines</h3>
+								<span>4 nights</span>
+								<span class="price">$1,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9uZyUyMGtvbmd8ZW58MHx8MHx8&w=1000&q=80" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Hongkong</h3>
+								<span>2 nights</span>
+								<span class="price">$1,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="https://images7.alphacoders.com/110/thumb-1920-1108495.png" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Dubai</h3>
+								<span>3 nights</span>
+								<span class="price">$1,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="https://wallpaper.dog/large/5548677.jpg" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Singapore</h3>
+								<span>4 nights</span>
+								<span class="price">$1,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="https://media.istockphoto.com/id/826766324/video/pura-ulun-danu-bratan-bali-landmark-travel-place-of-indonesia-4k-time-lapse.jpg?s=640x640&k=20&c=Lk_9U6isBG4MLtkccZLQzh36s2d7LvuuCKOnyIdOAqU=" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Bali</h3>
+								<span>2 nights</span>
+								<span class="price">$1,000</span>
+								<a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{%endblock%}
